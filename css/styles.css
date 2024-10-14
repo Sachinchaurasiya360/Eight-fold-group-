@@ -12,17 +12,17 @@ html {
 }
 
 :root{
-    --txtaccent: #fff;
+    --txtaccent: #0d0c0c;
     --txtaccent1: #9D9D9F;
     --textaccent2: #73757E;
     --textaccent3: #484848;
-    --txtaccent4: #000;
+    --txtaccent4: #e8e8e8;
     --txtaccent5: #E5E5E5;
     --haccent: #225fae;
     --haccent_withOpacity: #225fae;;
     --haccent2: #225fae;;
-    --bgaccent: #1A1C27;
-    --bgaccent_withOpacity: rgba(26, 28, 39,0.96);
+    --bgaccent: #f8f8f9;
+    --bgaccent_withOpacity: rgba(255, 255, 255);
 }
 .container{
     width: 95%;
@@ -31,12 +31,12 @@ html {
 }
 /* SECTION ZERO = LANDING VIEW */
 #sec-0{
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../Images/banner.jpg) no-repeat top center/cover;
+    background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.4)), url(../Images/banner.jpg) no-repeat top center/cover;
 }
 #sec-0 header.top {
-    background-color: var(--haccent);
+    background-color: rgb(47, 47, 156);
     font-size: 0.85rem;
-    color: var(--txtaccent4);
+    color: rgb(3, 3, 3);
     padding-top: 0px;
 }
 #sec-0 header.top .container {
@@ -92,7 +92,7 @@ html {
     margin-top: -5px;
 }
 #sec-0 header:last-of-type{
-    background-color: var(--bgaccent);
+    background-color: white;
     position: relative;
 }
 #sec-0 header:last-of-type .container{
@@ -112,12 +112,12 @@ html {
     margin: 0px;
 }
 #sec-0 header:last-of-type h1>span{
-    color: var(--txtaccent);
+    color:black;
 }
 #sec-0 header:last-of-type h1 p{
     font-size: 0.85rem;
     font-style: normal;
-    color: var(--textaccent2);
+    color: rgb(17, 16, 16);
     margin: 0px;
 }
 #sec-0 header label{
@@ -201,13 +201,13 @@ html {
 #sec-0 article h1{
     font-weight: normal;
     font-size: 1.25rem;
-    color: var(--txtaccent);
+    color: white;
     margin-bottom: 10px;
 }
 #sec-0 article h2{
     text-transform: uppercase;
     font-size: 1.85rem;
-    color: var(--txtaccent);
+    color: white;
     line-height: 1em;
     margin-bottom: 15px;
     font-weight: 700;
@@ -222,8 +222,8 @@ html {
     padding-right: 4rem;
 }
 #sec-0 article a{
-    color: var(--haccent2);
-    background-color: var(--txtaccent4);
+    color: white;
+    background-color: #106C9DB2;
     display: inline-block;
     padding: 8px 15px;
     margin-left: 5px;
@@ -231,6 +231,7 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    border-radius: 15px;
 }
 #sec-0 article a:hover{
     background-color: var(--haccent2);
@@ -238,7 +239,7 @@ html {
 }
 /* SECTION ONE */
 #sec-1 {
-    background-color: var(--txtaccent);
+    background-color: white;
 }
 #sec-1 article{
     padding-top: 20px;
@@ -279,7 +280,7 @@ html {
 }
 
 #sec-2{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../Images/bg4.jpg) no-repeat center center/cover;
+    /* background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../Images/bg4.jpg) no-repeat center center/cover; */
     text-align: center;
     padding: 3rem 0px 1.8rem;
 }
@@ -305,7 +306,7 @@ html {
     margin-top: 40px;
 }
 #sec-2 article .cont{
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    /* background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));  background for circle logo  */
     border-radius: 10px;
     padding: 95px 10px 20px;
     text-align: center;
@@ -314,7 +315,9 @@ html {
 #sec-2 article figure div:first-of-type{
     width: 10em;
     height: 10em;
-    background-color: var(--haccent2);
+    
+    background: linear-gradient(156.35deg, rgba(12, 109, 154, 0.6) 31.01%, rgba(255, 255, 255, 0.6) 84.77%);
+
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -340,7 +343,7 @@ text-shadow:1px 1px #73757E;
 }
 
 #sec-3{
-    background-color: var(--txtaccent);
+    background-color: white;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -358,10 +361,12 @@ text-shadow:1px 1px #73757E;
     justify-content: space-between;
     flex-direction: column;
     align-content: space-around;
+
 }
 #sec-3 .card{
     width: 90%;
     margin-bottom: 30px;
+
 }
 #sec-3 .card p{
     text-align: justify;
@@ -370,6 +375,8 @@ text-shadow:1px 1px #73757E;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
+        border-radius: 50px;
+
 }
 #sec-3 .card>div{
     position: relative;
@@ -385,6 +392,7 @@ text-shadow:1px 1px #73757E;
     bottom: 0px;
     font-size: 1.5rem;
     font-weight: 400;
+    
 }
 #sec-3 a{
     color: var(--txtaccent);
@@ -394,6 +402,7 @@ text-shadow:1px 1px #73757E;
     padding: 6px 15px;
     border-radius: 5px;
     display: inline-block;
+    
 }
 /* SECTION 4 */
 #sec-4{
