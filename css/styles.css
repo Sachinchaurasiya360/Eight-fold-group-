@@ -12,7 +12,7 @@ html {
 }
 
 :root{
-    --txtaccent: #0d0c0c;
+    --txtaccent: #f4efef;
     --txtaccent1: #9D9D9F;
     --textaccent2: #73757E;
     --textaccent3: #484848;
@@ -127,7 +127,7 @@ html {
 #sec-0 header nav a {
     display: block;
     text-decoration: none;
-    color: var(--txtaccent1);
+    color: black;
     text-align: center;
     padding: 10px;
     transition: background-color 0.6s ease;
@@ -136,6 +136,8 @@ html {
 #sec-0 header nav a:hover{
     background-color: var(--haccent_withOpacity);
     color: var(--txtaccent);
+    background: #106C9DB2;
+    border-radius: 15px;
 }
 #sec-0 header nav i {
     display: flex;
@@ -285,14 +287,14 @@ html {
     padding: 3rem 0px 1.8rem;
 }
 #sec-2 .container>h1{
-    color: var(--haccent);
+    color: black;
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 10px;
     font-weight: 700;
 }
 #sec-2 .container>p {
-    color: var(--txtaccent);
+    color: black;
     margin-bottom: 30px;
 }
 #sec-2 article{
@@ -352,7 +354,7 @@ text-shadow:1px 1px #73757E;
     font-size: 1.7rem;
     margin-bottom: 30px;
     text-align: center;
-    color: var(--bgaccent);
+    color:black;
     font-weight: 900;
 }
 #sec-3 .cont{
@@ -385,7 +387,7 @@ text-shadow:1px 1px #73757E;
     width: 100%;
     text-align: center;
     margin: 0px;
-    color: var(--txtaccent);
+    color: black;
     background-color: rgba(0,0,0,0.65);
     padding: 8px 15px 15px;
     position: absolute;
@@ -395,7 +397,7 @@ text-shadow:1px 1px #73757E;
     
 }
 #sec-3 a{
-    color: var(--txtaccent);
+    color: black;
     background-color: var(--haccent);
     text-transform: uppercase;
     text-decoration: none;
@@ -404,6 +406,13 @@ text-shadow:1px 1px #73757E;
     display: inline-block;
     
 }
+#card-img-top{
+    border-radius: 50px;
+}
+.card img {
+    border-radius: 15px; 
+}
+
 /* SECTION 4 */
 #sec-4{
     background: linear-gradient(rgba(78, 76, 70, 0.8),rgba(78, 76, 70, 0.8)), url(../Images/bg2.jpg) no-repeat center center/cover;
@@ -461,7 +470,7 @@ text-shadow:1px 1px #73757E;
 }
 /* SECTION 5 */
 #sec-5{
-    background: url(../Images/bg3.jpg) no-repeat center center/cover;
+    /* background: url(../Images/bg3.jpg) no-repeat center center/cover; */
     text-align: center;
     padding-top: 2rem;
     font-size: 0.9rem;
@@ -470,11 +479,11 @@ text-shadow:1px 1px #73757E;
     text-transform: uppercase;
     font-size: 1.7rem;
     margin-bottom: 1.6rem;
-    color: var(--txtaccent4);
+    color: black;
     font-weight: 800;
 }
 #sec-5 h1+p{
-    color: var(--txtaccent4);
+    color: black;
     padding: 0px 2rem;
     margin-bottom: 4rem;
 }
@@ -534,11 +543,12 @@ text-shadow:1px 1px #73757E;
 }
 #sec-5 .contactUs{
     padding-top: 1.5rem;
-    background-color: var(--haccent_withOpacity);
-    border-bottom: solid 2rem var(--textaccent3);
+    background-color: white;
+    border-bottom: solid rem var(--textaccent3);
+    
 }
 #sec-5 .contactUs h1{
-    color: var(--textaccent3);
+    color: black;
     text-transform: uppercase;
     font-size: 1.52rem;
     font-weight: 800;
@@ -560,6 +570,10 @@ text-shadow:1px 1px #73757E;
     border-radius: 6px;
     border-style: none;
     color: var(--textaccent3);
+    border-color: red;
+    box-shadow: inset 0px 0px 10px #000000;
+   
+
 }
 #sec-5 .contactUs form input[type=submit]{
     padding: 6px 20px;
@@ -569,10 +583,10 @@ text-shadow:1px 1px #73757E;
     color: var(--txtaccent5);
 }
 #sec-5 .contactUs form input:focus{
-    box-shadow: inset 0px 0px 10px var(--txtaccent1);
+    box-shadow: inset 0px 0px 10px black;
 }
 #sec-5 .contactUs form input[type=submit]:hover{
-    box-shadow: inset 0px 0px 10px var(--txtaccent1);
+    box-shadow: inset 0px 0px 10px black;
 }
 #sec-5 .contactUs form input+p{
     width: 100%;
@@ -583,14 +597,22 @@ text-shadow:1px 1px #73757E;
     line-height: 1.1em;
     padding: 0px 6px;
     position: absolute;
-    bottom: 2px;
+    bottom: 122px;
 }
 .invalid{
     box-shadow: inset 0px 0px 10px #e67a7a;
 }
+.divider {
+    border: 0;
+    height: 10px;
+    background: #000; /* Line color */
+    margin: 20px 0; /* Adds space around the line */
+    width: 100%; /* Ensures it spans the entire width */
+}
+
 /* SECTION SIX */
 #sec-6{
-    background: linear-gradient(rgba(0, 0, 0,0.9),rgba(0, 0, 0,0.9)), url(../Images/rascacielos-nueva-york.jpg) no-repeat center center/cover;
+    /* background: linear-gradient(rgba(0, 0, 0,0.9),rgba(0, 0, 0,0.9)), url(../Images/rascacielos-nueva-york.jpg) no-repeat center center/cover; */
     padding-top: 2rem;
     padding-bottom: 4rem;
     font-size: 0.8rem;
@@ -600,7 +622,7 @@ text-shadow:1px 1px #73757E;
     flex-flow: row wrap;
     justify-content: space-between;
     row-gap: 15px;
-    color: var(--txtaccent5);
+    color: black;
 }
 #sec-6 h1{
     font-weight: 400;
