@@ -25,13 +25,14 @@ html {
     --bgaccent_withOpacity: rgba(255, 255, 255);
 }
 .container{
-    width: 95%;
+    width: 60%;
     margin: 0px auto;
     padding: 0px;
 }
 /* SECTION ZERO = LANDING VIEW */
 #sec-0{
     background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.4)), url(../Images/banner.jpg) no-repeat top center/cover;
+    
 }
 #sec-0 header.top {
     background-color: rgb(47, 47, 156);
@@ -159,7 +160,7 @@ html {
     justify-content: center;
     align-items: flex-start;
     background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
-    backdrop-filter: blur(4px);
+    /* backdrop-filter: blur(4px); */
     position: absolute;
     width: 100%;
     height: 110vh;
@@ -195,25 +196,31 @@ html {
     display: block;
 }
 #sec-0 article{
-    display: flex;
+    display: grid;
     align-items: center;
     text-align: center;
-    padding: 10rem 0px;
+    /* padding: 10rem 0px; */
 }
-#sec-0 article h1{
-    font-weight: normal;
-    font-size: 1.25rem;
-    color: white;
-    margin-bottom: 10px;
-}
+
 #sec-0 article h2{
-    text-transform: uppercase;
+    text-transform:capitalize;
     font-size: 1.85rem;
     color: white;
-    line-height: 1em;
-    margin-bottom: 15px;
+    line-height: 2em;
+    margin-bottom: 7rem;
     font-weight: 700;
+    margin-top: 15rem;
 }
+#blur {
+    backdrop-filter: blur(3px); /* Blurs background */
+    color: white; /* Set text color */
+    font-size: 1.85rem; /* Set font size */
+    line-height: 1em; /* Line height */
+    margin: 0; /* Reset margin */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+
 #sec-0 article h2 span{
     color: var(--haccent);
 }
@@ -224,17 +231,18 @@ html {
     padding-right: 4rem;
 }
 #sec-0 article a{
-    color: white;
+    color: rgb(226, 222, 222);
     background-color: #106C9DB2;
     display: inline-block;
-    padding: 8px 15px;
-    margin-left: 5px;
-    border: solid 1px var(--haccent2);
+    padding: 1px 5px 1px 5px;
+    border: solid 1px black;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    border-radius: 15px;
-}
+    border-radius: 20px;
+    padding: 10px 20px;
+} 
+
 #sec-0 article a:hover{
     background-color: var(--haccent2);
     color: var(--txtaccent);
@@ -387,8 +395,9 @@ text-shadow:1px 1px #73757E;
     width: 100%;
     text-align: center;
     margin: 0px;
-    color: black;
-    background-color: rgba(0,0,0,0.65);
+    color: white;
+    background: rgba(0, 0, 0, 0.23);
+    border-radius: 0px 5px 15px 15px;
     padding: 8px 15px 15px;
     position: absolute;
     bottom: 0px;
@@ -413,6 +422,15 @@ text-shadow:1px 1px #73757E;
     border-radius: 15px; 
 }
 
+
+#test{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    color: black;
+    
+}
 /* SECTION 4 */
 #sec-4{
     background: linear-gradient(rgba(78, 76, 70, 0.8),rgba(78, 76, 70, 0.8)), url(../Images/bg2.jpg) no-repeat center center/cover;
@@ -926,8 +944,12 @@ text-shadow:1px 1px #73757E;
         gap: 10px ;
     }
     #sec-0 header:last-of-type .container{
-        padding: 0.95rem 0px;
-    }
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.65rem 0px;
+        position: relative;    }
     #sec-0 header nav a {
         margin-right: 10px;
         font-size: 0.92rem;
