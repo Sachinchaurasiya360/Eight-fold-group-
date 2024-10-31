@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link href="css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.compat.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/work.css" rel="stylesheet" type="text/css">
+    <script defer src="js/scripts.js"></script>
+    <title>Eight Fold Group</title>
 </head>
 <body>
-   
-    
     <section id="sec-0">
         <header>
+            <div class="hide" id="searchBar">
+                <input type="search" name="searchBox" id="searchBox" placeholder="Type your search here..    Press [Esc] to exist">
+            </div>
             <div class="container">  
-                <h1>
-                    <span>Eight Fold Group</span> 
-                    <p>Experties foresight and Groundbraking solutions</p>
-                </h1>
+                <img id="logos" src="./Images/logo.png" alt="">
                 <label for="menu"><i class="fas fa-bars"></i></label>
                 <input type="checkbox" id="menu">
                 <nav>
@@ -24,10 +27,59 @@
                     <a href="#">Blog</a>
                     <a href="#">Components</a>
                     <a href="#">Contact</a>
-                    <!-- <i class="fa-solid fa-magnifying-glass" id="search"></i> -->
                 </nav>
             </div>
         </header>
+    </section>
+    <!-- <div id="clients">
+        <h3>Work Gallery</h3>
+        <p>Welcome to eight fold group work Gallery where vision become reality  discover th Groundbraking project that define our legacy</p>
+    </div> -->
+
+
+
+
+
+
+
+
+        <!-- Collage Container -->
+        <div class="wrapper">
+            <h1>Work Gallery</h1>
+            <p>Welcome to eight fold group work Gallery where vision become reality  discover th Groundbraking project that define our legacy</p>
+    
+            <!-- Single image row -->
+            <figure>
+                <div class="post-image">
+                    <img src="https://unsplash.it/900/400/?random" alt="Single Image">
+                </div>
+            </figure>
+    
+            <!-- Double image row -->
+            <figure>
+                <div class="post-image">
+                    <img src="https://unsplash.it/400/300/?random" alt="Image 1">
+                </div>
+                <div class="post-image">
+                    <img src="https://unsplash.it/800/600/?random" alt="Image 2">
+                </div>
+            </figure>
+    
+            <!-- Triple image row -->
+            <figure>
+                <div class="post-image">
+                    <img src="https://unsplash.it/375/250/?random" alt="Image 1">
+                </div>
+                <div class="post-image">
+                    <img src="https://unsplash.it/396/264/?random" alt="Image 2">
+                </div>
+                <div class="post-image">
+                    <img src="https://unsplash.it/399/266/?random" alt="Image 3">
+                </div>
+            </figure>
+        </div>
+
+
 
 
 
@@ -39,11 +91,9 @@
     <hr class="divider">
 </div>
 
-        
     <section id="sec-6">
         <div class="container">
             <div class="about">
-                <h1>About Company</h1>
                 <h2>
                     Eight Fold Group 
                     <p>We build your dream house</p>
@@ -61,15 +111,6 @@
                 <a href="#">Contact Us</a>
                 <a href="#">Our terms</a>
             </div>
-    
-            <!-- <div class="posts">
-                <h1>Our Completed Project</h1>
-                <a href="#"><span>20<br>AUG</span>Ryan International School, Sanpada</a>
-                <a href="#"><span>25<br>Sep</span>Hotel Executive Inn, MIDC Taloja</a>
-                <a href="#"><span>30<br>DEC</span>Panchdip society Sec. 29 Vashi</a>
-                <a href="#"><span>10<br>Jan</span>IES School Vashi</a>
-                <a href="#"><span>16<br>mar</span>Shree Sahayya CHS Panvel</a>
-            </div> -->
             <div class="contact">
                 <h1>Contact us</h1>
                 <p>402,Moraj Riveside Park, Plot No 448, Panvel Mumbai</p>
@@ -79,18 +120,8 @@
             </div>
         </div>
     </section>
-
-    
-    <!-- <section id="sec-7">
-        <div class="container">
-            <p>Copyright &copy; 2024 | Designed and Managed by 
-                <span>
-                    <a href="https://sachinchaurasiyaportf.netlify.app" target="_blank">BlueMedia Xpert</a>
-                </span>
-            </p>
-        </div>
-        
-    </section> -->
-
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init();</script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
