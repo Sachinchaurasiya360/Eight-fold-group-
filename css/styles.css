@@ -435,6 +435,10 @@ text-shadow:1px 1px #73757E;
     color: black;
     padding-top: 0px;
     
+    
+}
+#test:hover{
+    cursor: pointer;
 }
 /* SECTION 4 */
 #sec-4{
