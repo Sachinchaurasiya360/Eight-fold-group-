@@ -409,7 +409,7 @@ text-shadow:1px 1px #73757E;
     font-weight: 400;
     
 }
-#sec-3 a{
+/* #sec-3 a {
     color: black;
     background-color: var(--haccent);
     text-transform: uppercase;
@@ -418,7 +418,7 @@ text-shadow:1px 1px #73757E;
     border-radius: 5px;
     display: inline-block;
     
-}
+} */
 #card-img-top{
     border-radius: 50px;
 }
@@ -428,17 +428,14 @@ text-shadow:1px 1px #73757E;
 
 
 #test{
-    text-align: center;
-    display: flex;
+    display: grid;
     justify-content: center;
-    text-decoration: underline;
-    color: black;
-    padding-top: 0px;
-    
+    padding-top: -10px;
     
 }
 #test:hover{
     cursor: pointer;
+    content: "→";
 }
 /* SECTION 4 */
 #sec-4{
