@@ -32,7 +32,7 @@ html {
 /* SECTION ZERO = LANDING VIEW */
 #logos{
     width: 280px;
-    margin-left: 0px;
+    margin-left: -50px;
 }
 #sec-0{
     background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.4)), url(../Images/efg.jpg) no-repeat top center/cover;
@@ -1085,13 +1085,14 @@ text-shadow:1px 1px #73757E;
     padding-left: 30px;
     padding-right: 30px;
     background-color: white;
+    flex-wrap: wrap;
 }
 
 /* Individual card styling */
 .testimonial-card {
     width: 300px;
     padding: 20px;
-    background-color: rgb(8.24% 7.84% 30.2%);
+    background: linear-gradient(180deg, #6DA7C2 0%, #FFFFFF 100%);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -1114,12 +1115,12 @@ text-shadow:1px 1px #73757E;
 .testimonial-card h3 {
     margin-top: 40px;
     font-size: 1.2em;
-    color:white;
+    color:rgb(33, 32, 32);
 }
 
 .testimonial-card p {
     font-size: 0.9em;
-    color:white;
+    color:rgb(21, 20, 20);
     margin-top: 10px;
 }
 #ttt{
