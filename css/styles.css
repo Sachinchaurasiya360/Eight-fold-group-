@@ -261,7 +261,7 @@ html {
 }
 #sec-1 article h1{
     font-size: 1.85rem;
-    color: var(--haccent);
+    color: black;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -292,7 +292,10 @@ html {
 #sec-1 aside img{
     max-width: 100%;
 }
-
+#enq:hover {
+    background: rgba(0, 123, 255, 0.8) !important; /* Change background color on hover */
+    color: white !important; /* Change text color on hover */
+}
 #sec-2{
     /* background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../Images/bg4.jpg) no-repeat center center/cover; */
     text-align: center;

@@ -382,6 +382,7 @@ text-shadow:1px 1px #73757E;
     margin-bottom: 30px;
 
 }
+
 #sec-3 .card p{
     text-align: justify;
     word-break: break-all;
@@ -409,6 +410,10 @@ text-shadow:1px 1px #73757E;
     font-weight: 400;
     
 }
+
+#sec-3 .caption:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
 #sec-3 a{
     color: black;
     background-color:white;
@@ -424,6 +429,9 @@ text-shadow:1px 1px #73757E;
 }
 .card img {
     border-radius: 15px; 
+}
+.card img:hover {
+    box-shadow: 0 0 10px 5px rgba(0.5, 0.5, 0.5, 0.5);
 }
 
 
@@ -1072,127 +1080,4 @@ text-shadow:1px 1px #73757E;
     .container {
         width: 1340px;
     }
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Main container styling */
-.testimonial-section {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: white;
-}
-
-/* Individual card styling */
-.testimonial-card {
-    width: 300px;
-    padding: 20px;
-    background-color: rgb(8.24% 7.84% 30.2%);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    position: relative;
-}
-
-/* Circular image styling */
-.testimonial-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 3px solid #1f2020;
-    position: absolute;
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* Client name and testimonial text */
-.testimonial-card h3 {
-    margin-top: 40px;
-    font-size: 1.2em;
-    color:white;
-}
-
-.testimonial-card p {
-    font-size: 0.9em;
-    color:white;
-    margin-top: 10px;
-}
-#ttt{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 0px;
-    padding-bottom: 40px;
-    text-transform: uppercase;
-}
-#enquiry-form-wrapper {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(../Images/enq.png) no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#enquiry-form {
-    background-color: rgba(122, 192, 189, 0.9); /* Semi-transparent overlay color */
-    width: 100%;
-    max-width: 500px;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    top: -50px; /* Moves form partially above background image */
-}
-
-#enquiry-form h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-#enquiry-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-#enquiry-form input,
-#enquiry-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-#enquiry-form textarea {
-    resize: vertical;
-    height: 100px;
-}
-
-#enquiry-form button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4a90e2;
-    color: #fff;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#enquiry-form button:hover {
-    background-color: #357ab7;
 }
