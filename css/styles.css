@@ -8,7 +8,7 @@
 html {
     font-size: 12px;
     color: #000;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma,Verdana, sans-serif;
 }
 
 :root{
@@ -304,10 +304,14 @@ html {
     font-size: 2rem;
     margin-bottom: 10px;
     font-weight: 700;
+
 }
 #sec-2 .container>p {
     color: black;
     margin-bottom: 30px;
+    text-align: center;
+
+
 }
 #sec-2 article{
     display: flex;
@@ -353,7 +357,7 @@ color: var(--haccent2);
 #sec-2 article figure p{
 color: var(--txtaccent);
 font-size: 0.88rem;
-text-shadow:1px 1px #73757E;
+color: black;
 }
 
 #sec-3{
@@ -669,6 +673,7 @@ text-shadow:1px 1px #73757E;
 }
 #sec-6 .about>p{
     margin-bottom: 1.5rem;
+    font-style: italic;
 }
 #sec-6 .about a{
     display: inline-flex;
@@ -677,7 +682,6 @@ text-shadow:1px 1px #73757E;
     height: 40px;
     margin-right: 5px;
     border-radius: 50%;
-    background-color: var(--haccent);
     font-size: 1.25rem;
     color: var(--bgaccent);
     justify-content: center;
@@ -1094,7 +1098,6 @@ text-shadow:1px 1px #73757E;
     padding: 20px;
     background: linear-gradient(180deg, #6DA7C2 0%, #FFFFFF 100%);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
 }
