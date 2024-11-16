@@ -125,7 +125,7 @@
     <h3 id="ttt">Testimonial</h3>
  <div class="testimonial-section">
     <div class="testimonial-card">
-        <img src="Images/Testi.jpg" alt="Client Photo">
+        <img src="Images/kamble.jpg" alt="Client Photo">
         <h3>Mr. Pravin kamble
             ,Stream villah
             karjat</h3>
@@ -134,16 +134,17 @@
 
   
     <div class="testimonial-card">
-        <img src="Images/Testi.jpg" alt="Client Photo">
-        <h3>Mr. Mahesh Gajur Sir
-            Waghachiwadi</h3>
+        <a href=""></a>
+        <img src="Images/arch.jpg" alt="Client Photo">
+        <h3>Mrs. Prerana Damani 
+            Architeck</h3>
         <p>"We are beyond grateful to Eight Fold Group for turning our dreams into a beautiful space. Their passion and dedication were clear in every step, and we couldn't be happier with the final outcome."</p>
     </div>
 
     <div class="testimonial-card">
-        <img src="Images/Testi.jpg" alt="Client Photo">
-        <h3>Mrs. Prerana Damani 
-            Architeck</h3>
+        <img src="Images/mahesh sir.jpg" alt="Client Photo">
+        <h3>Mr. Mahesh Gajur Sir
+            Waghachiwadi</h3>
         <p>"Eight Fold Group brought warmth and care to our project, treating it as if it were their own. Their expertise, combined with a personal touch, made the entire journey truly enjoyable and rewarding."</p>
     </div>
 </div>
@@ -152,7 +153,7 @@
  <div  id="enquiry-form-wrapper">
     <div id="enquiry-form">
         <h2>Enquiry Now</h2>
-        <form action="#" method="post">
+        <form method="post"action="javascript:void(0);">
             <label for="fullname">Full Name</label>
             <input type="text" id="fullname" name="fullname" placeholder="Your Full Name" required>
 
@@ -165,7 +166,7 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Your Message" required></textarea>
 
-            <button type="submit" onclick="SubmitEvent">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
 </div>
@@ -206,5 +207,44 @@
     <script src="js/wow.min.js"></script>
     <script> new WOW().init();</script>
     <script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.getElementById('enquiryForm').addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        // Gather form data
+        const fullname = document.getElementById('fullname').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        // Validate data (additional validation can be added as needed)
+        if (!fullname || !email || !phone || !message) {
+            alert('All fields are required!');
+            return;
+        }
+
+        // Sending the data to the backend
+        try {
+            const response = await fetch('/send-email', { // Replace with your backend endpoint
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ fullname, email, phone, message }),
+            });
+
+            if (response.ok) {
+                alert('Your enquiry has been sent successfully!');
+                document.getElementById('enquiryForm').reset();
+            } else {
+                throw new Error('Failed to send your enquiry.');
+            }
+        } catch (error) {
+            console.error(error);
+            alert('Something went wrong! Please try again later.');
+        }
+    });
+</script>
 </body>
 </html>
