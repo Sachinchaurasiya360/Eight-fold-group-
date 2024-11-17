@@ -6,8 +6,7 @@ document.getElementById("enquiry-form").addEventListener("submit", function(even
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    // Send the data to the server
-    fetch('http://localhost:5000/send-email', {
+    fetch('https://eightfoldgroup.in/send-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -21,9 +20,9 @@ document.getElementById("enquiry-form").addEventListener("submit", function(even
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            document.getElementById("status").innerHTML = "Message sent successfully!";
+            alert("Message sent successfully!");
         } else {
-            document.getElementById("status").innerHTML = "Failed to send message.";
+            alert("Server is facing some issues. Please call us instead.");
         }
     })
     .catch(error => {
