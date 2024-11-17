@@ -1,35 +1,40 @@
-// Handle form submission
-document.getElementById("enquiry-form").addEventListener("submit", function(event) {
-    event.preventDefault();
+ document.querySelector("form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form from submitting the traditional way
 
+    // Get the values from the form
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
     const message = document.getElementById("message").value;
 
-    fetch('https://eightfoldgroup.in/send-email', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            name: name,
-            email: email,
-            message: message
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert("Message sent successfully!");
-        } else {
-            alert("Server is facing some issues. Please call us instead.");
-        }
-    })
-    .catch(error => {
-        document.getElementById("status").innerHTML = "An error occurred.mm";
-        console.error("Error:", error);
-    });
-});
+    // Prepare the email parameters
+    const emailParams = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    };
+
+    // Send the email using EmailJS
+    emailjs.send("service_erc7ipd", "template_83d4mw9", emailParams)
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        alert("Your message has been sent successfully!");
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        alert("There was an error sending your message. Please try again.");
+      });
+  });
+
+
+
+
+
+
+// Attach the function to the form submit event
+document.getElementById('enquiry-form').addEventListener('submit', sendEmail);
+
 //SEARCH
 const search = document.getElementById('search');
 const searchBar = document.getElementById('searchBar');

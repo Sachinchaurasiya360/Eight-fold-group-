@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "body": "^5.1.0",
-    "cors": "^2.8.5",
-    "express": "^4.21.1",
-    "nodemailer": "^6.9.16",
-    "parser": "^0.1.4"
-  }
-}
