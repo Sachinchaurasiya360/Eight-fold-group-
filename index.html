@@ -127,7 +127,7 @@
     <div class="testimonial-card">
         <img src="Images/kamble.jpg" alt="Client Photo">
         <h3>Mr. Pravin kamble
-            ,Stream villah
+            <br>Stream Villah,
             karjat</h3>
         <p>"From the very first meeting, Eight Fold Group understood our vision and went above and beyond to make it a reality. Their team felt like an extension of our own, and the results speak volumes!"</p>
     </div>
@@ -143,7 +143,7 @@
 
     <div class="testimonial-card">
         <img src="Images/mahesh sir.jpg" alt="Client Photo">
-        <h3>Mr. Mahesh Gajur Sir
+        <h3>Mr. Mahesh Gajur <br>
             Waghachiwadi</h3>
         <p>"Eight Fold Group brought warmth and care to our project, treating it as if it were their own. Their expertise, combined with a personal touch, made the entire journey truly enjoyable and rewarding."</p>
     </div>
@@ -155,7 +155,7 @@
         <h2>Enquiry Now</h2>
         <form method="post"action="javascript:void(0);">
             <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Your Full Name" required>
+            <input type="text" id="name" name="fullname" placeholder="Your Full Name" required>
 
             <label for="email">Email ID</label>
             <input type="email" id="email" name="email" placeholder="Your Email ID" required>
@@ -199,7 +199,7 @@
                 <h1>Contact us</h1>
                 <p>402,Moraj Riveside Park, Plot No 448, Panvel Mumbai</p>
                 <p>eightfoldgroup2019@gmail.com</p>
-                <p>9323349470<br>9594046515</p>
+                <p>9594046515</p>
 
             </div>
         </div>
@@ -208,43 +208,6 @@
     <script> new WOW().init();</script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
-<script>
-    document.getElementById('enquiryForm').addEventListener('submit', async function (e) {
-        e.preventDefault();
 
-        // Gather form data
-        const fullname = document.getElementById('fullname').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const message = document.getElementById('message').value;
-
-        // Validate data (additional validation can be added as needed)
-        if (!fullname || !email || !phone || !message) {
-            alert('All fields are required!');
-            return;
-        }
-
-        // Sending the data to the backend
-        try {
-            const response = await fetch('/send-email', { // Replace with your backend endpoint
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ fullname, email, phone, message }),
-            });
-
-            if (response.ok) {
-                alert('Your enquiry has been sent successfully!');
-                document.getElementById('enquiryForm').reset();
-            } else {
-                throw new Error('Failed to send your enquiry.');
-            }
-        } catch (error) {
-            console.error(error);
-            alert('Something went wrong! Please try again later.');
-        }
-    });
-</script>
 </body>
 </html>

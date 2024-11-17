@@ -878,6 +878,7 @@ text-align: justify;
     }
     #sec-1 article p{
         padding-right: 1rem;
+        font-size: 17px;
     }
     #sec-1 aside {
         width: 48%;
