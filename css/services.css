@@ -1081,3 +1081,27 @@ text-shadow:1px 1px #73757E;
         width: 1340px;
     }
 }
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+   
+}
+
+.styled-button {
+    display: inline-block; /* Necessary for anchor styling */
+    text-decoration: none; /* Remove underline */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.styled-button:hover {
+    background-color: #e5e8eb; /* Darker blue on hover */
+}

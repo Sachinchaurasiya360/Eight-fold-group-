@@ -291,6 +291,9 @@ html {
 }
 #sec-1 aside img{
     max-width: 100%;
+    margin-top: 20px;
+    border-radius: 30px;
+
 }
 #enq:hover {
     background: rgba(0, 123, 255, 0.8) !important; /* Change background color on hover */
@@ -312,7 +315,7 @@ html {
 #sec-2 .container>p {
     color: black;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: justify;
 
 
 
@@ -360,7 +363,7 @@ color: var(--haccent2);
 }
 #sec-2 article figure p{
 color: var(--txtaccent);
-font-size: 0.88rem;
+font-size: 0.98rem;
 color: black;
 text-align: justify;
 }
@@ -1202,4 +1205,29 @@ text-align: justify;
 
 #enquiry-form button:hover {
     background-color: #357ab7;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+   
+}
+
+.styled-button {
+    display: inline-block; /* Necessary for anchor styling */
+    text-decoration: none; /* Remove underline */
+    background: linear-gradient(180deg, #6DA7C2 0%, #c1e2ee 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.styled-button:hover {
+    background-color: #e5e8eb; /* Darker blue on hover */
 }
