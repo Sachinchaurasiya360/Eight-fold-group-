@@ -284,17 +284,53 @@ html {
     border-radius: 5px;
     display: inline-block;
     width: fit-content;
-}
+}/* Style for the aside container */
 #sec-1 aside {
     width: 95%;
     margin: 25px auto 0px;
+    position: relative; /* Enables positioning of overlay relative to aside */
 }
-#sec-1 aside img{
+
+/* Style for the image */
+#sec-1 aside img {
     max-width: 100%;
     margin-top: 20px;
-    border-radius: 30px;
-
+    border-radius: 15px;
+    display: block; /* Ensures no extra space around the image */
+    position: relative; /* Required to target the image directly */
 }
+
+/* Style for the overlay */
+#sec-1 aside .overlay {
+    position: absolute;
+    top: 20px; /* Matches the margin-top of the image */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 20px); /* Ensures overlay height matches the image height */
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent layer */
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    text-transform: uppercase; /* Optional for styling text */
+    border-radius: 15px; /* Matches the image's rounded corners */
+    pointer-events: none; /* Prevent overlay interference */
+}
+
+/* Hover effect */
+#sec-1 aside:hover .overlay {
+    opacity: 1; /* Reveal overlay on hover */
+}
+
+
+
+
+
+
+
 #enq:hover {
     background: rgba(0, 123, 255, 0.8) !important; /* Change background color on hover */
     color: white !important; /* Change text color on hover */
@@ -436,6 +472,9 @@ text-align: justify;
 }
 .card img {
     border-radius: 15px; 
+}
+.card img:hover {
+    box-shadow: #010f21 0px 0px 10px;
 }
 
 

@@ -369,6 +369,63 @@ text-shadow:1px 1px #73757E;
     color:black;
     font-weight: 900;
 }
+
+
+#sec-3 .cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+#sec-3 .card {
+    width: 90%;
+    margin-bottom: 30px;
+    position: relative; /* Keep card as a relative container for absolute positioning of the caption */
+}
+
+#sec-3 .card img {
+    border-radius: 15px;
+    width: 100%; /* Ensure the image covers the full width of the card */
+    height: auto; /* Maintain aspect ratio of the image */
+    display: block; /* Remove any extra space below the image */
+    position: relative; /* Ensure the image can act as a container for the caption */
+}
+
+#sec-3 .caption {
+    position: absolute;
+    bottom: 0px; /* Position the caption at the bottom of the image */
+    left: 0; /* Ensure the caption starts from the left */
+    width: 100%; /* Make the caption take the full width of the image */
+    text-align: center;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0px 0px 15px 15px; /* Round the bottom corners */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+#sec-3 a {
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.card img:hover {
+    box-shadow: 0 0 10px 5px rgba(0.5, 0.5, 0.5, 0.5); /* Add hover shadow effect to images */
+}
+
+
+
+
+
+/* 
 #sec-3 .cont{
     display: flex;
     flex-wrap: wrap;
@@ -403,11 +460,11 @@ text-shadow:1px 1px #73757E;
     color: white;
     background: rgba(0, 0, 0, 0.23);
     border-radius: 0px 5px 15px 15px;
-    padding: 8px 15px 15px;
+    padding: 8px 1px 5px;
     position: absolute;
     bottom: 0px;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 1000;
     
 }
 
@@ -432,7 +489,7 @@ text-shadow:1px 1px #73757E;
 }
 .card img:hover {
     box-shadow: 0 0 10px 5px rgba(0.5, 0.5, 0.5, 0.5);
-}
+} */
 
 
 #test{
@@ -1104,4 +1161,18 @@ text-shadow:1px 1px #73757E;
 
 .styled-button:hover {
     background-color: #e5e8eb; /* Darker blue on hover */
+}
+.card a {
+    display: contents; /* Makes <a> tag layout-neutral */
+    text-decoration: none; /* Removes any text underline */
+    color: inherit; /* Keeps the color the same as its parent */
+}
+
+.card img {
+    border-radius: 15px; /* Keeps your existing styling */
+    transition: box-shadow 0.3s ease; /* Adds smooth hover effect */
+}
+
+.card img:hover {
+    box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.5); /* Matches your hover effect */
 }
