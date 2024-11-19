@@ -342,7 +342,6 @@ html {
     height: 40px;
     margin-right: 5px;
     border-radius: 50%;
-    background-color: var(--haccent);
     font-size: 1.25rem;
     color: var(--bgaccent);
     justify-content: center;
@@ -353,6 +352,9 @@ html {
 }
 #sec-6 .about i{
     vertical-align: baseline;
+}
+#sec-6 .contact p a {
+    color: #000;
 }
 #sec-6 .about a:hover{
     background-color: var(--txtaccent5);

@@ -722,6 +722,9 @@ text-align: justify;
     margin-bottom: 1.5rem;
     font-style: italic;
 }
+#sec-6 .contact p a {
+    color: #000;
+}
 #sec-6 .about a{
     display: inline-flex;
     padding: 5px;

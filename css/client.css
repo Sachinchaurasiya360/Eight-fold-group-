@@ -673,7 +673,6 @@ text-shadow:1px 1px #73757E;
     height: 40px;
     margin-right: 5px;
     border-radius: 50%;
-    background-color: var(--haccent);
     font-size: 1.25rem;
     color: var(--bgaccent);
     justify-content: center;
@@ -769,6 +768,9 @@ text-shadow:1px 1px #73757E;
 }
 #sec-7 p span{
     color: var(--haccent);
+}
+#sec-6 .contact p a {
+    color: #000;
 }
 
 /*MEDIA QUERRIES*/

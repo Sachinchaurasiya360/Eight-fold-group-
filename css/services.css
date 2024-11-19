@@ -379,117 +379,37 @@ text-shadow:1px 1px #73757E;
     align-content: space-around;
 }
 
-#sec-3 .card {
-    width: 90%;
-    margin-bottom: 30px;
-    position: relative; /* Keep card as a relative container for absolute positioning of the caption */
-}
 
-#sec-3 .card img {
-    border-radius: 15px;
-    width: 100%; /* Ensure the image covers the full width of the card */
-    height: auto; /* Maintain aspect ratio of the image */
-    display: block; /* Remove any extra space below the image */
-    position: relative; /* Ensure the image can act as a container for the caption */
+
+
+
+#sec-3 .card > a > div {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: auto; /* Prevent extra space in the parent container */
 }
 
 #sec-3 .caption {
-    position: absolute;
-    bottom: 0px; /* Position the caption at the bottom of the image */
-    left: 0; /* Ensure the caption starts from the left */
-    width: 100%; /* Make the caption take the full width of the image */
+    width: 100%; /* Ensure it matches the parent div width */
     text-align: center;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 0px 0px 15px 15px; /* Round the bottom corners */
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-
-#sec-3 a {
-    color: black;
-    background-color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 6px 15px;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.card img:hover {
-    box-shadow: 0 0 10px 5px rgba(0.5, 0.5, 0.5, 0.5); /* Add hover shadow effect to images */
-}
-
-
-
-
-
-/* 
-#sec-3 .cont{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
-    align-content: space-around;
-
-}
-#sec-3 .card{
-    width: 90%;
-    margin-bottom: 30px;
-
-}
-
-#sec-3 .card p{
-    text-align: justify;
-    word-break: break-all;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
-        border-radius: 50px;
-
-}
-#sec-3 .card>div{
-    position: relative;
-}
-#sec-3 .caption{
-    width: 100%;
-    text-align: center;
-    margin: 0px;
+    margin: 0;
     color: white;
     background: rgba(0, 0, 0, 0.23);
-    border-radius: 0px 5px 15px 15px;
-    padding: 8px 1px 5px;
+    border-radius: 0 5px 15px 15px;
+    padding: 8px 1px;
     position: absolute;
-    bottom: 0px;
-    font-size: 1.5rem;
-    font-weight: 1000;
-    
+    bottom: 0; /* Stick to the bottom of the parent div */
+    font-size: 20px;
 }
 
-#sec-3 .caption:hover{
-    background: rgba(0, 0, 0, 0.5);
+#sec-3 .card img {
+    display: block; /* Removes inline spacing */
+    width: 100%;    /* Ensure the image spans the full container width */
+    height: auto;   /* Maintain aspect ratio */
+    border-radius: 15px; /* Optional, if you want rounded corners */
 }
-#sec-3 a{
-    color: black;
-    background-color:white;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 6px 15px;
-    border-radius: 5px;
-    display: inline-block;
-    
-}
-#card-img-top{
-    border-radius: 50px;
-}
-.card img {
-    border-radius: 15px; 
-}
-.card img:hover {
-    box-shadow: 0 0 10px 5px rgba(0.5, 0.5, 0.5, 0.5);
-} */
+
 
 
 #test{
@@ -505,6 +425,10 @@ text-shadow:1px 1px #73757E;
 #test:hover{
     cursor: pointer;
 }
+
+
+
+
 /* SECTION 4 */
 #sec-4{
     background: linear-gradient(rgba(78, 76, 70, 0.8),rgba(78, 76, 70, 0.8)), url(../Images/bg2.jpg) no-repeat center center/cover;
@@ -745,7 +669,6 @@ text-shadow:1px 1px #73757E;
     height: 40px;
     margin-right: 5px;
     border-radius: 50%;
-    background-color: var(--haccent);
     font-size: 1.25rem;
     color: var(--bgaccent);
     justify-content: center;
@@ -1175,4 +1098,8 @@ text-shadow:1px 1px #73757E;
 
 .card img:hover {
     box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.5); /* Matches your hover effect */
+}
+
+#sec-6 .contact p a {
+    color: #000;
 }
